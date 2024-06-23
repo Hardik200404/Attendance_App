@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance App</title>
+    <style>
+        #fetch-total-report{
+            display: flex;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <button id="fetch-total-report" onclick="fetch_full_attendance_report()">Fetch Full Attendance Report</button>
+    <form id="form" onsubmit="handle_submit(event)">
+        <label for="date">Select Date: </label>
+        <input id="date" name="date" type="date">
+        <button type="submit">Search</button>
+    </form>
+    <div id="dynamic"></div>
+</body>
+<script src="script.js"></script>
+</html>
